@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+
+    <style>
+        body {
+            background-color: khaki;
+        }
+    </style>
+
+    <script>
+        let pessoas = ["Erika", "Alice", "Wendell"]
+        function sortear() {
+            let np = pessoas.length;
+            let ns = Math.floor(Math.random() * np);
+            document.getElementById("d").innerHTML = pessoas[ns];
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!--SORTEIO SIMPLES, EXERCICIO JAVASCRIPT INTERMEDIARIO-->
+    <h1 id="d"></h1>
+    <button onclick="sortear()"> Sortear </button>
+</body>
+
+</html>
